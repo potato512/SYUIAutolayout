@@ -10,7 +10,7 @@
 
 根据不同屏幕的尺寸比例进行等比例缩放处理，即重写CGRectMake方法，方法名为：AutoSizeDidCGRectMake，或AutoSizeShouldCGRectMake，等等。
 
-使用示例
+#使用示例
 * 注：添加头文件"AutoSizeCGRect.h"
 ~~~javascript
 // 方法1
@@ -37,3 +37,10 @@ imageview.backgroundColor = [UIColor greenColor];
 // 方法3 宽高根据适配比例自动进行计算适配，图标设置非正方法
 imageview.frame = AutoSizeDidCGRectMake(originX, originY, 100.0, 100.0);
 ~~~
+
+#效果示例
+![iPhone4](./images/iPhone4.png) ![iPhone5](./images/iPhone5.png)
+![iPhone6](./images/iPhone6.png) ![iPhone6Plus](./images/iPhone6Plus.png)
+![iPhone6s](./images/iPhone6s.png) ![iPhone6sPlus](./images/iPhone6sPlus.png)
+
+
