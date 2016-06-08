@@ -39,22 +39,23 @@ imageview.frame = AutoSizeDidCGRectMake(originX, originY, 100.0, 100.0);
 ~~~
 
 #效果示例
-iPhone4效果
+* iPhone4效果
+
 ![iPhone4](./images/iPhone4.png) 
+* iPhone5效果
 
-iPhone5效果
 ![iPhone5](./images/iPhone5.png)
+* iPhone6效果
 
-iPhone6效果
 ![iPhone6](./images/iPhone6.png) 
+* iPhone6Plus效果
 
-iPhone6Plus效果
 ![iPhone6Plus](./images/iPhone6Plus.png)
+* iPhone6s效果
 
-iPhone6s效果
 ![iPhone6s](./images/iPhone6s.png) 
+* iPhone6sPlus效果
 
-iPhone6sPlus效果
 ![iPhone6sPlus](./images/iPhone6sPlus.png)
 
 
