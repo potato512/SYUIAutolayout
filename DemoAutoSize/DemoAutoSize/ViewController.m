@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "AutoSizeCGRect.h"
+#import "SYAutoSizeCGRect.h"
 
 @interface ViewController ()
 
@@ -19,7 +19,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    NSString *title = [NSString stringWithFormat:@"适配 %@", (IS_IPHONE_4_OR_LESS_AutoSize ? @"iPhone4" : (IS_IPHONE_5_AutoSize ? @"iPhone5" : (IS_IPHONE_6_AutoSize ? @"iPhone6" : @"iPhone6Plus")))];
+    NSString *title = [NSString stringWithFormat:@"适配 %@", (SYIS_IPHONE_4_OR_LESS_AutoSize ? @"iPhone4" : (SYIS_IPHONE_5_AutoSize ? @"iPhone5" : (SYIS_IPHONE_6_AutoSize ? @"iPhone6" : @"iPhone6Plus")))];
     self.title = title;
     
     
@@ -40,12 +40,12 @@
     label002.backgroundColor = [UIColor brownColor];
     label002.adjustsFontSizeToFitWidth = YES;
     label002.text = [NSString stringWithFormat:@"AutoSizeDidCGRectMake(10.0, %@, 200.0, 30.0)", @(originY)];
-    label002.frame = AutoSizeDidCGRectMake(10.0, originY, 200.0, 30.0);
+    label002.frame = SYAutoSizeDidCGRectMake(10.0, originY, 200.0, 30.0);
     
     // 方法1 获取实际高度
 //    originY += (CGRectGetHeight(label002.frame) + 10.0);
     // 方法2 根据适配比例计算实际高度
-    originY += (AutoSizeGetHeight(30.0) + 10.0);
+    originY += (SYAutoSizeGetHeight(30.0) + 10.0);
     
     UILabel *label003 = [[UILabel alloc] init];
     [self.view addSubview:label003];
@@ -54,13 +54,13 @@
     label003.text = [NSString stringWithFormat:@"AutoSizeDidCGRectMake(10.0, %@, 200.0, 30.0)", @(originY)];
     // 使用自定义的CGRectMake方法，根据不同版本进行适配
     // 方法1 宽高根据适配比例自动进行计算适配
-//    label003.frame = AutoSizeShouldCGRectMake(10.0, originY, 200.0, 30.0, YES, YES);
+//    label003.frame = SYAutoSizeShouldCGRectMake(10.0, originY, 200.0, 30.0, YES, YES);
     // 方法2 宽高根据适配比例自动进行计算适配
-    CGFloat height = AutoSizeGetHeight(30.0);
-    CGFloat width = AutoSizeGetWidth(200.0);
+    CGFloat height = SYAutoSizeGetHeight(30.0);
+    CGFloat width = SYAutoSizeGetWidth(200.0);
     label003.frame = CGRectMake(10.0, originY, width, height);
     // 方法3 宽高根据适配比例自动进行计算适配
-//    label003.frame = AutoSizeDidCGRectMake(10.0, originY, 200.0, 30.0);
+//    label003.frame = SYAutoSizeDidCGRectMake(10.0, originY, 200.0, 30.0);
     
     originY += (CGRectGetHeight(label003.frame) + 10.0);
     
@@ -77,12 +77,12 @@
     imageview002.backgroundColor = [UIColor greenColor];
     // 使用自定义的CGRectMake方法，根据不同版本进行适配
     // 方法1 宽高根据适配比例自动进行计算适配，图标设置非正方法
-//    imageview002.frame = AutoSizeShouldCGRectMake(originX, originY, 100.0, 100.0, YES, YES);
+//    imageview002.frame = SYAutoSizeShouldCGRectMake(originX, originY, 100.0, 100.0, YES, YES);
     // 方法2 高根据适配比例自动进行计算适配，图标设置为正方法
-    CGFloat sizeImage = AutoSizeGetHeight(100.0);
+    CGFloat sizeImage = SYAutoSizeGetHeight(100.0);
     imageview002.frame = CGRectMake(originX, originY, sizeImage, sizeImage);
     // 方法3 宽高根据适配比例自动进行计算适配，图标设置非正方法
-//    imageview002.frame = AutoSizeDidCGRectMake(originX, originY, 100.0, 100.0);
+//    imageview002.frame = SYAutoSizeDidCGRectMake(originX, originY, 100.0, 100.0);
 }
 
 - (void)didReceiveMemoryWarning {

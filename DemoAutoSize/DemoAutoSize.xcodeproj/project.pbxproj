@@ -52,7 +52,7 @@
 		A77145F01D07AD1B00BA7830 /* DemoAutoSizeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoAutoSizeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A77145F41D07AD1B00BA7830 /* DemoAutoSizeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoAutoSizeUITests.m; sourceTree = "<group>"; };
 		A77145F61D07AD1B00BA7830 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A77146021D07ADB700BA7830 /* AutoSizeCGRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoSizeCGRect.h; sourceTree = "<group>"; };
+		A77146021D07ADB700BA7830 /* SYAutoSizeCGRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYAutoSizeCGRect.h; sourceTree = "<group>"; };
 		A77146031D07B64600BA7830 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,7 +109,7 @@
 				A77145D51D07AD1B00BA7830 /* ViewController.h */,
 				A77145D61D07AD1B00BA7830 /* ViewController.m */,
 				A77146031D07B64600BA7830 /* image.png */,
-				A77146021D07ADB700BA7830 /* AutoSizeCGRect.h */,
+				A77146021D07ADB700BA7830 /* SYAutoSizeCGRect.h */,
 				A77145D81D07AD1B00BA7830 /* Main.storyboard */,
 				A77145DB1D07AD1B00BA7830 /* Assets.xcassets */,
 				A77145DD1D07AD1B00BA7830 /* LaunchScreen.storyboard */,
