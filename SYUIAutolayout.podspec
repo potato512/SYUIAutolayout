@@ -43,8 +43,9 @@ EOS
   s.ios.deployment_target = '5.0'
 
   # 依赖Framwork
+  # s.frameworks = 'Foundation', 'UIKit'
 
   # 依赖第三库
   # s.dependency "JSONKit", "~ > 1.4"
-  
+
 end
