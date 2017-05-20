@@ -32,6 +32,7 @@ Pod::Spec.new do |s|
 
   # 支持版本
   s.platform     = :ios, "5.0"
+  s.ios.deployment_target = '5.0'
 
   pch_AF = <<-EOS
 #ifndef TARGET_OS_IOS
@@ -39,9 +40,7 @@ Pod::Spec.new do |s|
 #endif
 EOS
   s.prefix_header_contents = pch_AF
-  
-  s.ios.deployment_target = '5.0'
-
+    
   # 依赖Framwork
   # s.frameworks = 'Foundation', 'UIKit'
 
