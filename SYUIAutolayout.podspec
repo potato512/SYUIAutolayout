@@ -25,6 +25,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/potato512/SYUIAutolayout.git", :tag => "#{s.version}" }
   # 库文件地址（相对于.podspec文件的路径）——重要
   s.source_files  = "SYUIAutolayout/DemoAutoSize/DemoAutoSize/SYUIAutoSiz/*.{h}"
+  # 公开文件
   s.public_header_files = "SYUIAutolayout/DemoAutoSize/DemoAutoSize/SYUIAutoSiz/SYAutoSizeCGRect.h"
   
   # 是否支持ARC
@@ -41,8 +42,11 @@ Pod::Spec.new do |s|
 EOS
   s.prefix_header_contents = pch_AF
     
-  # 依赖Framwork
+  # 依赖Framework
   # s.frameworks = 'Foundation', 'UIKit'
+
+  # 依赖library，如sqllite等tbd结尾的
+  # s.libraries = 'resolv'
 
   # 依赖第三库
   # s.dependency "JSONKit", "~ > 1.4"
