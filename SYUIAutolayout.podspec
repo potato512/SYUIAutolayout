@@ -21,13 +21,15 @@ Pod::Spec.new do |s|
   s.social_media_url   = "http://twitter.com/herman"
   s.author             = { "herman" => "zhangsy757@163.com" }
   
-  # 版本地址
+  # 仓库地址
   s.source       = { :git => "https://github.com/potato512/SYUIAutolayout.git", :tag => "#{s.version}" }
   # 库文件地址（相对于.podspec文件的路径）——重要
   s.source_files  = "SYUIAutolayout/DemoAutoSize/DemoAutoSize/SYUIAutoSiz/*.{h}"
   # 公开文件
   s.public_header_files = "SYUIAutolayout/DemoAutoSize/DemoAutoSize/SYUIAutoSiz/SYAutoSizeCGRect.h"
-  
+  # 静态库文件将s.ios.vendored_framework前的ios文件夹去掉
+  # s.ios.vendored_framework   = 'PPSPrivateStaticLibrary.framework'
+
   # 是否支持ARC
   s.requires_arc = true
 
