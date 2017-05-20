@@ -18,17 +18,17 @@ Pod::Spec.new do |s|
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
  
   # 作者
-  s.social_media_url   = "http://twitter.com/herman"
+  # s.social_media_url   = "http://twitter.com/herman"
   s.author             = { "herman" => "zhangsy757@163.com" }
   
   # 仓库地址
   s.source       = { :git => "https://github.com/potato512/SYUIAutolayout.git", :tag => "#{s.version}" }
   # 库文件地址（相对于.podspec文件的路径）——重要
   # s.source_files  = "SYUIAutoSize/**/*.{h,m}" 无效
-  s.source_files  = "SYUIAutoSize/*.{h,m}"
+  s.source_files  = "SYUIAutoSize/*{h,m}"
   # 公开文件
   # s.public_header_files = "SYUIAutoSize/**/*.h" 无效
-  s.public_header_files = "SYUIAutoSize/*.h"
+  # s.public_header_files = "SYUIAutoSize/*.h"
   # 静态库文件将s.ios.vendored_framework前的ios文件夹去掉
   # s.ios.vendored_framework   = 'PPSPrivateStaticLibrary.framework'
 
