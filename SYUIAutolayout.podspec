@@ -23,12 +23,10 @@ Pod::Spec.new do |s|
   
   # 仓库地址
   s.source       = { :git => "https://github.com/potato512/SYUIAutolayout.git", :tag => "#{s.version}" }
-  # 库文件地址（相对于.podspec文件的路径）——重要
-  # s.source_files  = "SYUIAutoSize/**/*.{h,m}" 无效
-  s.source_files  = "SYUIAutoSize/*{h,m}"
-  # 公开文件
-  # s.public_header_files = "SYUIAutoSize/**/*.h" 无效
-  # s.public_header_files = "SYUIAutoSize/*.h"
+  # 源文件目录（注意：xx.podspec文件与源文件目录名称一致且在目录中的层级一致）——重要
+  s.source_files  = "SYUIAutolayout/*.{h,m}"
+  # 头文件目录
+  s.public_header_files = "SYUIAutolayout/*.h"
   # 静态库文件将s.ios.vendored_framework前的ios文件夹去掉
   # s.ios.vendored_framework   = 'PPSPrivateStaticLibrary.framework'
 
