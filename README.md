@@ -1,5 +1,5 @@
 # SYUIAutolayout
-##UI控件多屏适配
+UI控件多屏适配
 
 个人以为在设置UI的frame时，主要是设置x、y坐标，以及宽、高。因此在进行多屏适配时，可以忽略x、y坐标的处理，只需要处理宽、高即可，即根据不同版本的屏幕尺寸，进行相应比例的计算进行缩放处理。
 
@@ -10,7 +10,7 @@
 
 根据不同屏幕的尺寸比例进行等比例缩放处理，即重写CGRectMake方法，方法名为：AutoSizeDidCGRectMake，或AutoSizeShouldCGRectMake，等等。
 
-#使用示例
+# 使用示例
 * 注：添加头文件"SYAutoSizeCGRect.h"
 ~~~ javascript
 // 方法1
@@ -38,7 +38,7 @@ imageview.backgroundColor = [UIColor greenColor];
 imageview.frame = SYAutoSizeDidCGRectMake(originX, originY, 100.0, 100.0);
 ~~~
 
-#效果示例
+# 效果示例
 * iPhone4效果
 
 ![iPhone4](./images/iPhone4.png) 
