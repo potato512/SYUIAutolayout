@@ -14,8 +14,8 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/potato512/SYUIAutolayout"
   
   # 证书证明
-  s.license      = "MIT"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  # s.license      = "MIT"
+  s.license      = { :type => "MIT", :file => "LICENSE" }
  
   # 作者
   # s.social_media_url   = "http://twitter.com/herman"
