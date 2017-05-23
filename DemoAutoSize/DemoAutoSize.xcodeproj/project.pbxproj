@@ -36,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A7499A8B1ED3C5A7003BD288 /* SYAutoSizeCGRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYAutoSizeCGRect.h; sourceTree = "<group>"; };
 		A77145CC1D07AD1B00BA7830 /* DemoAutoSize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoAutoSize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A77145D01D07AD1B00BA7830 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A77145D21D07AD1B00BA7830 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,7 +54,6 @@
 		A77145F41D07AD1B00BA7830 /* DemoAutoSizeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoAutoSizeUITests.m; sourceTree = "<group>"; };
 		A77145F61D07AD1B00BA7830 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A77146031D07B64600BA7830 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
-		DFE2F3A11ED0C7BD008CD203 /* SYAutoSizeCGRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYAutoSizeCGRect.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +81,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A7499A8A1ED3C5A7003BD288 /* SYUIAutolayout */ = {
+			isa = PBXGroup;
+			children = (
+				A7499A8B1ED3C5A7003BD288 /* SYAutoSizeCGRect.h */,
+			);
+			name = SYUIAutolayout;
+			path = ../../SYUIAutolayout;
+			sourceTree = "<group>";
+		};
 		A77145C31D07AD1B00BA7830 = {
 			isa = PBXGroup;
 			children = (
@@ -108,7 +117,7 @@
 				A77145D31D07AD1B00BA7830 /* AppDelegate.m */,
 				A77145D51D07AD1B00BA7830 /* ViewController.h */,
 				A77145D61D07AD1B00BA7830 /* ViewController.m */,
-				DFE2F3A01ED0C7BD008CD203 /* SYUIAutolayout */,
+				A7499A8A1ED3C5A7003BD288 /* SYUIAutolayout */,
 				A77146031D07B64600BA7830 /* image.png */,
 				A77145D81D07AD1B00BA7830 /* Main.storyboard */,
 				A77145DB1D07AD1B00BA7830 /* Assets.xcassets */,
@@ -143,14 +152,6 @@
 				A77145F61D07AD1B00BA7830 /* Info.plist */,
 			);
 			path = DemoAutoSizeUITests;
-			sourceTree = "<group>";
-		};
-		DFE2F3A01ED0C7BD008CD203 /* SYUIAutolayout */ = {
-			isa = PBXGroup;
-			children = (
-				DFE2F3A11ED0C7BD008CD203 /* SYAutoSizeCGRect.h */,
-			);
-			path = SYUIAutolayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
