@@ -30,7 +30,7 @@ CGFloat sizeImage = SYAutoSizeGetHeight(100.0);
 imageview.frame = CGRectMake(originX, originY, sizeImage, sizeImage);
 ~~~
 ~~~ javascript
-// 方法2
+// 方法3
 UIImageView *imageview = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"image"]];
 [self.view addSubview:imageview];
 imageview.backgroundColor = [UIColor greenColor];
