@@ -59,3 +59,8 @@ imageview.frame = SYAutoSizeDidCGRectMake(originX, originY, 100.0, 100.0);
 ![iPhone6sPlus](./images/iPhone6sPlus.png)
 
 
+# 修改说明
+* 20180207
+  * 版本号：1.0.1
+  * 添加iPhoneX适配宏主义
+

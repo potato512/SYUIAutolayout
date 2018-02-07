@@ -119,10 +119,6 @@
 				A77145D61D07AD1B00BA7830 /* ViewController.m */,
 				A7499A8A1ED3C5A7003BD288 /* SYUIAutolayout */,
 				A77146031D07B64600BA7830 /* image.png */,
-				A77145D81D07AD1B00BA7830 /* Main.storyboard */,
-				A77145DB1D07AD1B00BA7830 /* Assets.xcassets */,
-				A77145DD1D07AD1B00BA7830 /* LaunchScreen.storyboard */,
-				A77145E01D07AD1B00BA7830 /* Info.plist */,
 				A77145CF1D07AD1B00BA7830 /* Supporting Files */,
 			);
 			path = DemoAutoSize;
@@ -131,6 +127,10 @@
 		A77145CF1D07AD1B00BA7830 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A77145D81D07AD1B00BA7830 /* Main.storyboard */,
+				A77145DB1D07AD1B00BA7830 /* Assets.xcassets */,
+				A77145DD1D07AD1B00BA7830 /* LaunchScreen.storyboard */,
+				A77145E01D07AD1B00BA7830 /* Info.plist */,
 				A77145D01D07AD1B00BA7830 /* main.m */,
 			);
 			name = "Supporting Files";
